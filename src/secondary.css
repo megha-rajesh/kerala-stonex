@@ -8,3 +8,19 @@ img {
     height: 50vh;
     max-width: 100%;
 }
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.ty-container .section-text {
+  margin-top: 0.5em;
+}
+
+.go-back {
+  color: var(--light-grey);
+  font-size: 0.75rem;
+}
