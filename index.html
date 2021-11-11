@@ -25,11 +25,11 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link gallery">Gallery
-                    <ul class="gallery-list">
+                <li class="nav-item"><a href="./pages/gallery.html" class="nav-link gallery">Gallery
+                    <!-- <ul class="gallery-list">
                         <li>Interlock</li>
                         <li>Plants</li>
-                    </ul>
+                    </ul> -->
                 </a></li>
                 <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
             </ul>
@@ -124,16 +124,18 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15773.407481311926!2d76.7953129!3d8.7529251!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95f9b54de4707fcc!2sKerala%20Stonex!5e0!3m2!1sen!2sin!4v1635226130588!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="col contact-form">
-                <form action="#" class="form">
+                <form action="https://formsubmit.co/keralastonex@gmail.com" method="POST" class="form">
                     <label for="name"> Name
-                        <input type="text" name="name" id="name" class="user-input">
+                        <input type="text" name="name" required id="name" class="user-input">
                     </label>
                     <label for="email">Email
-                        <input type="email" name="email" id="email" class="user-input">
+                        <input type="email" name="email" required id="email" class="user-input">
                     </label>
                     <label for="message">Message
-                        <textarea name="message" id="message" cols="30" rows="10" class="user-input"></textarea>
+                        <textarea name="message" required id="message" cols="30" rows="10" class="user-input"></textarea>
                     </label>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://vaishnav-sh.github.io/keralastonex/pages/thankyou.html">
                     <button type="submit" class="secondary-btn">Send</button>
                 </form>
             </div>
