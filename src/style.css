@@ -214,7 +214,7 @@ section {
 }
 
 .hero-title {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 3rem;
 }
 
@@ -330,6 +330,16 @@ label + label{
 
 .address {
     width: 80%;
+}
+/* maaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan */
+.phone-email {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-icon a {
+    display: inline-block;
+    margin: 0.35em;
 }
 
 .socials {
@@ -449,9 +459,20 @@ label + label{
         width: 20%;
     }
 
-    
     .gallery-list {
-        position: absolute;    
-        background-color: var(--primary-bg);
+        position: absolute;   
+    }
+
+    .show-gallery {
+        height: ;
+    }
+
+    .gallery-list li:last-child {
+        padding-bottom: 1em;
+    }
+
+    .highlights .row {
+        flex-wrap: wrap;
+        /* justify-content: center; */
     }
 }
