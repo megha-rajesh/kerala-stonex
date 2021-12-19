@@ -125,6 +125,11 @@ section {
     border: 1px solid;
     width: max-content;
     padding: 0.5em 1em;
+    transition: all 200ms ease;
+}
+
+.logo:hover {
+    transform: scale(.97);
 }
 
 .burger {
@@ -170,43 +175,6 @@ section {
     height: 90vh;
     overflow-y: initial;
 }
-
-/* 
-.gallery {
-    position: relative;
-}
-
-.gallery::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    right: -12px;
-    top: 7px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-  
-    border-top: 5px solid var(--white);
-}
-
-.gallery-list {
-    padding: 0;
-    list-style: none;
-    height: 0;
-    overflow-y: hidden;
-    background: var(--primary-bg);
-    transition: all 350ms ease;
-}
-
-.show-gallery {
-    height: 5rem;
-    overflow-y: initial;
-}
-
-.gallery-list li {
-    margin: 1.75em 0;
-} */
-
 
 /* HERO SECTION */
 #hero-section .section-text {
@@ -300,11 +268,11 @@ label + label{
 }
 
 .user-input {
-    /* border: none; */
+    border: none;
     margin-top: 0.5em;
     background-color: transparent;
     color: var(--white);
-    border: 1px solid --white;
+    border: 1px solid var(--white);
     padding: 0.5em 1em;
 }
 
@@ -332,7 +300,7 @@ label + label{
 .address {
     width: 80%;
 }
-/* maaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan */
+
 .phone-email {
     list-style: none;
     padding: 0;
@@ -376,7 +344,7 @@ label + label{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .row {
         display: flex;
         justify-content: space-between;
