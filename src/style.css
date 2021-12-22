@@ -142,7 +142,19 @@ section {
     margin: 6px;
     border-radius: 100px;
     background-color: var(--white);
+    transition: all 200ms ease;
 }
+/* toggle animation */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
 
 .navigation {
     display: flex;
@@ -240,6 +252,7 @@ section {
     font-weight: 700;
 }
 .h-detail {
+    font-weight: 500;
     font-size: 0.825rem;
     margin-top: 0.5em;
     text-transform: capitalize;
