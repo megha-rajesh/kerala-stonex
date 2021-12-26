@@ -2,10 +2,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
-}
+} 
 
 img {
-    height: 50vh;
     max-width: 100%;
 }
 
