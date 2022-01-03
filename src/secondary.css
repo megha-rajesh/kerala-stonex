@@ -1,12 +1,3 @@
-.gallery-section .row {
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
-} 
-
-img {
-    max-width: 100%;
-}
 
 .wrapper {
   min-height: 100vh;
@@ -22,4 +13,100 @@ img {
 .go-back {
   color: var(--light-grey);
   font-size: 0.75rem;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: repeat(6, 330px);
+  gap: 1rem;
+  padding: 1.5em 0;
+}
+
+.item {
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.rock1 {
+  background: url('../images/rock1.jpg') no-repeat;
+  background-size: cover;
+}
+.plant1 {
+  background: url('../images/plant1.jpg') no-repeat;
+  background-size: cover;
+}
+.rock2 {
+  background: url('../images/rock2.jpg') no-repeat;
+  background-size: cover;
+}
+.plant2 {
+  background: url('../images/plant2.jpg') no-repeat;
+  background-size: cover;
+}
+.interlock1 {
+  background: url('../images/interlock1.jpg') no-repeat;
+  background-size: cover;
+}
+.pot1 {
+  background: url('../images/pot1.jpg') no-repeat;
+  background-size: cover;
+}
+.interlock2 {
+  background: url('../images/interlock2.jpg') no-repeat;
+  background-size: cover;
+}
+.plant3 {
+  background: url('../images/plant3.jpg') no-repeat;
+  background-size: cover;
+}
+.plant4 {
+  background: url('../images/plant4.jpg') no-repeat;
+  background-size: cover;
+}
+.shop1 {
+  background: url('../images/shop1.jpg') no-repeat;
+  background-size: cover;
+  background-position: 0 -20px;
+}
+.plant5 {
+  background: url('../images/plant5.jpg') no-repeat;
+  background-size: cover;
+}
+.rock3 {
+  background: url('../images/rock3.jpg') no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .gallery-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 330px);
+  }
+
+  .row-span-2 {
+      grid-row: span 1;
+  }
+  .col-span-2 {
+      grid-column: span 1;
+  }
+
+  .item {
+    background-position: center;
+  }
+  
 }
