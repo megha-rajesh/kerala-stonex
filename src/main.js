@@ -20,11 +20,22 @@ function showNavigation() {
 }
 
 // counter section animation
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 850) {
-        startCount();
-    }
-})
+const highlights = document.querySelector('.highlights');
+const options = {
+    threshold: 0.2
+};
+
+const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return
+        } else {
+            startCount();
+        }
+    })
+}, options);
+
+observer.observe(highlights)
 
 function startCount() {
     const counters = document.querySelectorAll('.counter')
